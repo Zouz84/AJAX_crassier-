@@ -1,0 +1,6 @@
+$('.show_email').bind('ajax:success', function() {
+   $('#demoa').closest('h1').html('<%= @email.object %>');
+   $('#demo').closest('div').html('<%= @email.body %>');
+});
+
+ 
